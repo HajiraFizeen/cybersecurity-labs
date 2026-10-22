@@ -16,9 +16,9 @@ The objective of this lab is to understand how Nmap identifies accessible hosts,
 
 Testing is restricted to the designated training target for which I have authorization.
 
-- **Target:** [Training target or sanitized identifier]
-- **Environment:** [Lab platform or local lab]
-- **Date performed:** [Date]
+- **Target:** 10.80.138.42
+- **Environment:** TryHackMe
+- **Date performed:** 22/10/2026
 
 ## 4. Tools Used
 
@@ -60,11 +60,13 @@ Purpose: Save the scan output in normal text format for analysis and documentati
 
 Record only the results observed during the actual scan.
 
-| Port | State | Service | Observation |
-|---|---|---|---|
-| [Actual port] | [Actual state] | [Actual service] | [Your interpretation] |
+| Port | State | Service | 
+|---|---|---|
+| 22/tcp | open | SSH | 
+| 80/tcp | open | http|
+| 443/tcp|open | https|
 
-If no scan has been performed yet, leave this table empty until you collect results.
+
 
 ## 7. Understanding Port States
 
@@ -89,7 +91,6 @@ Depending on the actual findings:
 
 ## 10. Evidence
 
-Add sanitized screenshots or relevant command output to the `screenshots/` folder.
 
 - Basic scan output
 - Service detection output
